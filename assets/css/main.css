@@ -1547,18 +1547,20 @@ ul li {
   justify-content: center;
   padding: 1rem 0;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planInputDiv .planInput {
+#plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planInputDiv .plan-select {
+  background-color: transparent;
   border: 1px solid white;
-  font-size: 1.6rem;
-  border-radius: 0.8rem;
-  padding: 1.2rem 1.5rem;
-  display: flex;
+  border-radius: 0.5rem;
   color: white;
-  gap: 5px;
-  align-items: center;
+  padding: 0.8rem 1rem;
+  font-size: 1.6rem;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planInputDiv .planInput h3 {
-  margin: 0;
+#plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planInputDiv .plan-select:focus-visible {
+  outline: none;
+}
+#plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planInputDiv .plan-select option {
+  background-color: rgb(0, 206, 196);
+  color: white;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper .planContainer .planDetailsList ul {
   text-align: center;
@@ -1581,7 +1583,7 @@ ul li {
   background-color: transparent;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.firstCard {
-  background: #E9FFFF;
+  background: #e9ffff;
   position: relative;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.firstCard .planContainer {
@@ -1590,7 +1592,7 @@ ul li {
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.firstCard .planContainer .planCutImg .planBuyBtn {
   margin-top: 67px;
-  background-color: #259A99;
+  background-color: #259a99;
   padding: 1rem 2rem;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.firstCard .planContainer .planInfo h3 {
@@ -1613,7 +1615,7 @@ ul li {
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.secondCard {
   background: url(../images/svg/secondcardtop.svg) no-repeat top/100%;
-  background-color: #EBF2FF;
+  background-color: #ebf2ff;
   position: relative;
 }
 @media (max-width: 992px) {
@@ -1627,12 +1629,14 @@ ul li {
 #plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planTitle {
   padding-bottom: 5.3rem;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planInputDiv .planInput {
+#plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planInputDiv .plan-select {
+  background-color: transparent;
   color: black;
-  border: 1px solid black;
+  border-color: black;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planInputDiv .planInput span svg path {
-  fill: black;
+#plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planInputDiv .plan-select option {
+  background-color: white;
+  color: black;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.secondCard .planContainer .planDetailsList ul {
   color: #888888;
@@ -1660,7 +1664,7 @@ ul li {
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.thirdCard {
   background: url(../images/svg/thirdcardtop.svg) no-repeat top/100%;
-  background-color: #F8F8FF;
+  background-color: #f8f8ff;
   position: relative;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planTitle {
@@ -1671,12 +1675,14 @@ ul li {
   justify-content: start;
   padding-bottom: 4.3rem;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv .planInput {
+#plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv .plan-select {
+  background-color: transparent;
   color: black;
-  border: 1px solid black;
+  border-color: black;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv .planInput span svg path {
-  fill: black;
+#plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv .plan-select option {
+  background-color: white;
+  color: black;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planDetailsList ul {
   color: #888888;
@@ -1731,12 +1737,14 @@ ul li {
 #plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planTitle {
   color: #5479f7;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planInputDiv .planInput {
+#plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planInputDiv .plan-select {
+  background-color: transparent;
   color: black;
-  border: 1px solid black;
+  border-color: black;
 }
-#plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planInputDiv .planInput span svg path {
-  fill: black;
+#plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planInputDiv .plan-select option {
+  background-color: white;
+  color: black;
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planDetailsList ul {
   color: #888888;
@@ -1759,7 +1767,7 @@ ul li {
 }
 #plansSection .plansWrapper .planSlider .planningWrapper.fourthCard .planContainer .planCutImg .planBuyBtn button {
   font-size: 1.4rem;
-  background-color: #2E0AA3;
+  background-color: #2e0aa3;
   padding: 1rem 9rem;
   border: none;
   color: white;
