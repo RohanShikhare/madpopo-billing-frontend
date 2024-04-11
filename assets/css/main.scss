@@ -1487,6 +1487,8 @@ ul {
             padding-bottom: 4.3rem;
           }
           .planInputDiv{
+            position: relative;
+            z-index: 9999;
             .plan-select{
               background-color:transparent;
               color: black;

@@ -1675,6 +1675,10 @@ ul li {
   justify-content: start;
   padding-bottom: 4.3rem;
 }
+#plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv {
+  position: relative;
+  z-index: 9999;
+}
 #plansSection .plansWrapper .planSlider .planningWrapper.thirdCard .planInputDiv .plan-select {
   background-color: transparent;
   color: black;
