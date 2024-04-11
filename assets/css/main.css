@@ -2410,8 +2410,6 @@ ul li {
   outline: none;
 }
 #domain-table-wrap .d-table-wrap {
-  background-color: #f9fbff;
-  border-radius: 0.5rem;
   margin: 1rem;
 }
 #domain-table-wrap .d-table-wrap .tableInfoHead {
