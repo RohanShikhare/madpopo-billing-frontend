@@ -88,20 +88,18 @@ ul {
       }
     }
     .bannerServer {
-      background-image: url(../images/solutions/sever.png);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 15%;
+      img{
       position: absolute;
       top: 40%;
-      right: -90%;
+      right: 0px;
       transform: translate(-50%, -45%);
-      height: 100%;
-      width: 100%;
+      height: 140px;
+      width: 140px;
       pointer-events: none;
       z-index: 2;
       @include md-mobile {
         display: none;
+      }
       }
     }
   }
@@ -292,6 +290,7 @@ ul {
               padding: 2rem;
               &.dropdown-menu {
                 left: 100%;
+               
                 @include md-tablet {
                   display: none;
                   &.show {
@@ -301,6 +300,9 @@ ul {
                 }
                 &.show {
                   transform: translateX(-100%);
+                  @include mid-991-tab{
+                    transform: translateX(0%);
+                  }
                 }
               }
             }
@@ -348,6 +350,13 @@ ul {
                 display: block;
                 left: 100% !important;
                 transform: translateX(-100%);
+                @include mid-991-tab{
+                  display: none;
+                  &.show{
+                    display: block;
+                    transform: translateX(0%);
+                  }
+                }
                 @include md-tablet {
                   display: none;
                   &.show {
@@ -1364,7 +1373,7 @@ ul {
               &:focus-visible {
                 outline: none;
               }
-              option{
+              option {
                 background-color: rgba(0, 206, 196, 1);
                 color: white;
               }
@@ -1436,12 +1445,12 @@ ul {
             .planTitle {
               padding-bottom: 5.3rem;
             }
-            .planInputDiv{
-              .plan-select{
-                background-color:transparent;
+            .planInputDiv {
+              .plan-select {
+                background-color: transparent;
                 color: black;
                 border-color: black;
-                option{
+                option {
                   background-color: white;
                   color: black;
                 }
@@ -1486,14 +1495,14 @@ ul {
             justify-content: start;
             padding-bottom: 4.3rem;
           }
-          .planInputDiv{
+          .planInputDiv {
             position: relative;
             z-index: 9999;
-            .plan-select{
-              background-color:transparent;
+            .plan-select {
+              background-color: transparent;
               color: black;
               border-color: black;
-              option{
+              option {
                 background-color: white;
                 color: black;
               }
@@ -1554,12 +1563,12 @@ ul {
             .planTitle {
               color: #5479f7;
             }
-            .planInputDiv{
-              .plan-select{
-                background-color:transparent;
+            .planInputDiv {
+              .plan-select {
+                background-color: transparent;
                 color: black;
                 border-color: black;
-                option{
+                option {
                   background-color: white;
                   color: black;
                 }
@@ -1629,6 +1638,8 @@ ul {
 //accordianSection start
 .accordianSection {
   background-color: #f7f7fb;
+  position: relative;
+  z-index: 2;
   .planSectionTitleWrap {
     margin-top: 0;
     padding: 4.1rem 0 0 0;
@@ -1732,3 +1743,231 @@ ul {
 //accordianSection end
 
 //c-panel-hosting css ends here
+
+//login-page-starts
+#loginSection {
+  .loginRow {
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/images/login-page-banner/dots.jpg");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position: relative;
+    &:after {
+      content: "";
+      background-image: url(/assets/images/login-page-banner/light.jpg);
+      background-position: 0% 125%;
+      background-repeat: no-repeat;
+      background-size: 30%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      @include md-mobile{
+        display: none;
+      }
+    }
+    .login-form-wrap {
+      padding: 3rem;
+      padding-bottom: 0;
+      margin: 1rem;
+      margin-bottom: 4rem;
+      border: 1px solid #d9d9d9;
+      border-radius: 0.5rem;
+      position: relative;
+      z-index: 10;
+      background: white;
+      .login-title-wrap {
+        margin-top: 0;
+
+        text-align: center;
+      }
+      .login-input-wrap {
+        margin: 3rem auto;
+        .login-text {
+          display: block;
+          font-size: 1.4rem;
+          padding: 0.2rem 0.5rem;
+          color: gray;
+          margin: 0.5rem auto;
+          border: 1px solid grey;
+          border-radius: 0.3rem;
+          width: 90%;
+          &:focus-visible {
+            outline: none;
+          }
+        }
+        .password-wrap {
+          position: relative;
+          .login-password {
+            display: block;
+            font-size: 1.4rem;
+            padding: 0.2rem 0.5rem;
+            color: gray;
+            margin: 1rem auto;
+            border: 1px solid grey;
+            border-radius: 0.3rem;
+            width: 90%;
+            &:focus-visible {
+              outline: none;
+            }
+          }
+          i {
+            position: absolute;
+            top: 5px;
+            right: 35px;
+            cursor: pointer;
+            user-select: none;
+            &:focus-visible {
+              outline: none;
+            }
+          }
+        }
+        .login-button {
+          margin: 1.5rem auto;
+          margin-bottom: 1rem;
+          background-color: #2e0aa3;
+          border: none;
+          border-radius: 0.3rem;
+          font-size: 1.6rem;
+          font-weight: 700;
+          display: block;
+          width: 90%;
+          color: white;
+          padding: 0.2rem 1rem;
+        }
+        .login-checkbox-wrap {
+          width: 95%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 5px;
+          p {
+            text-align: end;
+            font-size: 1.4rem;
+            color: #8e8e8e;
+            margin: 0;
+          }
+        }
+        .forgot-pass-text {
+          color: gray;
+          font-size: 1.4rem;
+          margin: 0;
+          padding: 0.5rem 2rem;
+          a {
+            font-weight: 600;
+            color: #2e0aa3;
+          }
+        }
+        .register-btn-wrap {
+          position: relative;
+          text-align: center;
+          .register-btn {
+            margin: 2rem;
+            color: #2e0aa3;
+            font-size: 1.4rem;
+            font-weight: 500;
+            background-color: #eef0ff;
+            border: none;
+            border-radius: 0.3rem;
+            padding: 0.5rem 2rem;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 38%;
+            height: 1px;
+            background-color: grey;
+            left: 0;
+            transform: translateY(-50%);
+            @include d-1280-desktop{
+              width: 32%;
+            }
+            @include mid-991-tab{
+              width: 30%;
+            }
+            @include x-tablet{
+              width: 20%;
+            }
+            @include md-mobile{
+              width: 30%;
+            }
+            @include mobile{
+              width: 25%;
+            }
+            @include xss-mobile{
+              width: 20%;
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 38%;
+            height: 1px;
+            background-color: grey;
+            right: 0;
+            transform: translateY(-50%);
+            @include d-1280-desktop{
+              width: 32%;
+            }
+            @include mid-991-tab{
+              width: 30%;
+            }
+            @include x-tablet{
+              width: 20%;
+            }
+            @include md-mobile{
+              width: 30%;
+            }
+            @include mobile{
+              width: 25%;
+            }
+            @include xss-mobile{
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+    .left-side-wrap {
+      img {
+        height: 100%;
+        position: absolute;
+        left: 67px;
+        top: 144px;
+        z-index: 2;
+        @include mid-991-tab{
+          left: 30px;
+        }
+        @include x-tablet{
+          left: 10px;
+          top: 160px;
+        }
+        @include md-mobile{
+          display: none;
+        }
+      }
+    }
+    .right-side-wrap {
+      img {
+        position: absolute;
+        bottom: 60px;
+        right: 100px;
+        @include mid-991-tab{
+          right: 70px;
+        }
+        @include x-tablet{
+          right: 20px;
+        }
+        @include md-mobile{
+          display: none;
+        }
+      }
+    }
+  }
+}
+//login-page-ends

@@ -19,6 +19,7 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   </head>
   <body>
     <!-- Topbar Start -->
@@ -610,7 +611,7 @@
         <div class="bannerWrapper">
           <div class="col-xl-12 col-lg-12 col-md-12">
             <div class="bannerContentWrapper bannerText">
-              <h1>cPanel Hosting</h1>
+              <h1>Login to your account</h1>
               <p>
                 All our hosting accounts allow you to install popular software
                 such
@@ -623,269 +624,57 @@
 
       <!-- BannerImg start -->
       <div class="bannerArrow"></div>
-      <div class="bannerServer"></div>
+      <div class="bannerServer">
+        <img src="/assets/images/solutions/sever.png" alt="">
+      </div>
       <!-- BannerImg End -->
     </section>
     <!-- Topbar End -->
 
     <!-- Product and Services Section Start -->
-    <section id="plansSection">
-      <div class="container">
-        <div class="planSectionTitleWrap">
-          <h2 class="sectionTitle"><span>Pricing </span>Plan</h2>
-          <p class="secText">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
+    <section id="loginSection">
+      <div class="loginRow">
+        <div class="col-md-3 col-sm-3">
+          <div class="left-side-wrap">
+            <img src="/assets/images/login-page-banner/human.png" alt="human-icon">
+          </div>
         </div>
-        <div class="plansWrapper">
-          <div class="planSlider">
-            <div class="col-md-3">
-              <div class="planningWrapper firstCard">
-                <div class="planContainer">
-                  <h3 class="planTitle">Standard</h3>
-
-                  <div class="planPrice">
-                    <span class="planPriceUnit"> $20 </span>
-                    <span class="planPriceMonth"> / Mon </span>
-                  </div>
-
-                  <div class="planInfo">
-                    <h3>Plan</h3>
-                  </div>
-
-                  <div class="planInputDiv">
-                   <select class="plan-select">
-                    <option value="">1 Month</option>
-                    <option value="">1 Month</option>
-                    <option value="">1 Month</option>
-                   </select>
-                  </div>
-
-                  <div class="planDetailsList">
-                    <ul>
-                      <li>cPanel Control panel</li>
-                      <li>500MP Storage</li>
-                      <li>1 Mailbox</li>
-                      <li>1 Sub-Domains</li>
-                      <li>1 MySQL Database</li>
-                    </ul>
-                  </div>
-
-                  <div class="planCutImg">
-                    <button class="planBuyBtn">Buy</button>
-                  </div>
-                </div>
-                <div class="firstCardBottomSvg"></div>
-              </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="login-form-wrap">
+            <div class="login-title-wrap">
+              <h2 class="sectionTitle">Login <span>Now</span></h2>
+              <p class="secText">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
             </div>
-            <div class="col-md-3">
-              <div class="planningWrapper secondCard">
-                <div class="planContainer">
-                  <div class="planPrice">
-                    <span class="planPriceUnit"> $20 </span>
-                    <span class="planPriceMonth"> / Mon </span>
-                  </div>
-
-                  <h3 class="planTitle">Standard</h3>
-
-                  <div class="planInputDiv">
-                    <select class="plan-select">
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                     </select>
-                  </div>
-
-                  <div class="planDetailsList">
-                    <ul>
-                      <li>cPanel Control panel</li>
-                      <li>500MP Storage</li>
-                      <li>1 Mailbox</li>
-                      <li>1 Sub-Domains</li>
-                      <li>1 MySQL Database</li>
-                    </ul>
-                  </div>
-
-                  <div class="planCutImg">
-                    <div class="planBuyBtn">
-                      <button>Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="secondCardBottomSvg"></div>
-
+            <div class="login-input-wrap">
+              <input type="text" class="login-text" placeholder="Email ID" />
+              <div class="password-wrap">
+                <input
+                  type="password"
+                  class="login-password"
+                  placeholder="Password"
+                />
+                <i class="bi bi-eye-slash" id="togglePassword"></i>
               </div>
-            </div>
-            <div class="col-md-3">
-              <div class="planningWrapper thirdCard">
-                <div class="planContainer">
-                  <h3 class="planTitle">Standard</h3>
-                  <div class="planPrice">
-                    <span class="planPriceUnit"> $20 </span>
-                    <span class="planPriceMonth"> / Mon </span>
-                  </div>
-                  <div class="planInputDiv">
-                    <select class="plan-select">
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                     </select>
-                  </div>
-
-                  <div class="planDetailsList">
-                    <ul>
-                      <li>cPanel Control panel</li>
-                      <li>500MP Storage</li>
-                      <li>1 Mailbox</li>
-                      <li>1 Sub-Domains</li>
-                      <li>1 MySQL Database</li>
-                    </ul>
-                  </div>
-
-                  <div class="planCutImg">
-                    <div class="planBuyBtn">
-                      <button>Buy</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="thirdCardBottomSvg"></div>
-                
+              <button class="login-button">Login</button>
+              <div class="login-checkbox-wrap">
+                <p>Keep me logged in</p>
+                <input type="checkbox" class="logged-in" />
               </div>
-              
-            </div>
-            <div class="col-md-3">
-              <div class="planningWrapper fourthCard">
-                <div class="planContainer">
-                  <div class="planLogo">
-                    <span class="planLogoSVG">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="38"
-                        height="37"
-                        viewBox="0 0 38 37"
-                        fill="none"
-                      >
-                        <path
-                          d="M25.1079 21.7857C30.4961 21.7857 35.0283 17.5574 35.0283 12.1429C35.0283 6.72829 30.4961 2.5 25.1079 2.5C19.7197 2.5 15.1875 6.72829 15.1875 12.1429C15.1875 17.5574 19.7197 21.7857 25.1079 21.7857Z"
-                          fill="#5479F7"
-                          stroke="white"
-                          stroke-width="5"
-                        />
-                        <path
-                          d="M13.9771 36C21.0502 36 26.8497 30.4711 26.8497 23.5714C26.8497 16.6717 21.0502 11.1429 13.9771 11.1429C6.90403 11.1429 1.10449 16.6717 1.10449 23.5714C1.10449 30.4711 6.90403 36 13.9771 36Z"
-                          fill="#2E0AA3"
-                          stroke="white"
-                          stroke-width="2"
-                        />
-                      </svg>
-                    </span>
-                    <h3>Lorem Ipsum is simply dummy</h3>
-                  </div>
-                  <div class="planPrice">
-                    <span class="planPriceUnit"> $20 </span>
-                    <span class="planPriceMonth"> / Mon </span>
-                  </div>
-
-                  <h3 class="planTitle">Standard</h3>
-
-                  <div class="planInputDiv">
-                    <select class="plan-select">
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                      <option value="">1 Month</option>
-                     </select>
-                  </div>
-
-                  <h3 class="featuresTag">Features:</h3>
-
-                  <div class="planDetailsList">
-                    <ul>
-                      <li>cPanel Control panel</li>
-                      <li>500MP Storage</li>
-                      <li>1 Mailbox</li>
-                      <li>1 Sub-Domains</li>
-                      <li>1 MySQL Database</li>
-                    </ul>
-                  </div>
-
-                  <div class="planCutImg">
-                    <div class="planBuyBtn">
-                      <button>Buy</button>
-                    </div>
-                  </div>
-                </div>
+              <p class="forgot-pass-text">
+                Forgot Password ? <a href=""> Click Here</a>
+              </p>
+              <div class="register-btn-wrap">
+                <button class="register-btn">Register Now</button>
               </div>
             </div>
           </div>
-          <div class="feturesWrpper">
-            <ul>
-              <li>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_1179_13044)">
-                      <path
-                        d="M13.9358 1.60506L9.237 0.0383085C9.08316 -0.0129323 8.91685 -0.0129323 8.763 0.0383085L4.06425 1.60506C3.31718 1.85322 2.66731 2.3305 2.20698 2.96909C1.74666 3.60768 1.49928 4.3751 1.5 5.16231V9.00006C1.5 14.6723 8.4 17.8051 8.6955 17.9356C8.79137 17.9781 8.8951 18.0002 9 18.0002C9.1049 18.0002 9.20864 17.9781 9.3045 17.9356C9.6 17.8051 16.5 14.6723 16.5 9.00006V5.16231C16.5007 4.3751 16.2533 3.60768 15.793 2.96909C15.3327 2.3305 14.6828 1.85322 13.9358 1.60506ZM12.5385 7.28781L9.3345 10.4918C9.20339 10.6238 9.04736 10.7284 8.87548 10.7996C8.7036 10.8708 8.51929 10.9072 8.33325 10.9066H8.3085C8.11867 10.9037 7.9314 10.8623 7.75801 10.7849C7.58463 10.7076 7.42873 10.5959 7.29975 10.4566L5.57025 8.65656C5.49535 8.58707 5.43544 8.503 5.39419 8.40952C5.35294 8.31604 5.33123 8.21512 5.33039 8.11295C5.32954 8.01078 5.34958 7.90952 5.38928 7.81537C5.42897 7.72122 5.48749 7.63618 5.56123 7.56546C5.63497 7.49473 5.72238 7.43982 5.81811 7.4041C5.91383 7.36837 6.01585 7.35258 6.11789 7.35769C6.21994 7.3628 6.31986 7.38871 6.41154 7.43383C6.50321 7.47895 6.5847 7.54232 6.651 7.62006L8.334 9.37506L11.475 6.22506C11.6165 6.08844 11.8059 6.01284 12.0026 6.01455C12.1992 6.01626 12.3873 6.09514 12.5264 6.23419C12.6654 6.37325 12.7443 6.56136 12.746 6.75801C12.7477 6.95466 12.6721 7.14411 12.5355 7.28556L12.5385 7.28781Z"
-                        fill="#2E0AA3"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1179_13044">
-                        <rect width="18" height="18" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                Daily Backups
-              </li>
-              <li>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="18"
-                    viewBox="0 0 16 18"
-                    fill="none"
-                  >
-                    <path
-                      d="M9.5 5.26125V0.355498C10.1847 0.614998 10.8147 1.01475 11.3488 1.548L13.9618 4.1625C14.4957 4.69575 14.8955 5.32575 15.155 6.0105H10.25C9.836 6.0105 9.5 5.6745 9.5 5.26125ZM15.482 7.51125H10.25C9.0095 7.51125 8 6.50175 8 5.26125V0.028498C7.87925 0.020248 7.7585 0.010498 7.63625 0.010498H4.25C2.18225 0.011248 0.5 1.6935 0.5 3.76125V14.2612C0.5 16.329 2.18225 18.0112 4.25 18.0112H11.75C13.8177 18.0112 15.5 16.329 15.5 14.2612V7.875C15.5 7.75275 15.4902 7.632 15.482 7.51125ZM10.7802 13.8907L9.5705 15.1012C9.13775 15.534 8.5685 15.7507 8 15.7507C7.4315 15.7507 6.86225 15.534 6.4295 15.1012L5.21975 13.8907C4.9265 13.5975 4.9265 13.1227 5.21975 12.8302C5.513 12.537 5.987 12.537 6.28025 12.8302L7.25 13.8V10.5015C7.25 10.0875 7.58525 9.7515 8 9.7515C8.41475 9.7515 8.75 10.0875 8.75 10.5015V13.8L9.71975 12.8302C10.013 12.537 10.487 12.537 10.7802 12.8302C11.0735 13.1227 11.0735 13.5975 10.7802 13.8907Z"
-                      fill="#2E0AA3"
-                    />
-                  </svg>
-                </span>
-                Free Migration
-              </li>
-              <li>
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 18 18"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_1179_13040)">
-                      <path
-                        d="M17.3407 4.61325L13.3868 0.65925C12.9615 0.234 12.3967 0 11.796 0H6.204C5.60325 0 5.0385 0.234 4.61325 0.65925L0.65925 4.61325C0.234 5.0385 0 5.60325 0 6.204V11.796C0 12.3967 0.234 12.9615 0.65925 13.3868L4.61325 17.3407C5.0385 17.766 5.60325 18 6.204 18H11.796C12.3967 18 12.9615 17.766 13.3868 17.3407L17.3407 13.3868C17.766 12.9615 18 12.3967 18 11.796V6.204C18 5.60325 17.766 5.0385 17.3407 4.61325ZM9.20475 11.169C8.91075 11.463 8.51925 11.625 8.10375 11.625C7.68825 11.625 7.29675 11.463 7.00275 11.1683L4.29225 8.45775L5.35275 7.39725L8.064 10.1077C8.08275 10.1265 8.1255 10.1258 8.145 10.1077L12.6893 5.5635L13.7498 6.624L9.2055 11.1683L9.20475 11.169Z"
-                        fill="#2E0AA3"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_1179_13040">
-                        <rect width="18" height="18" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </span>
-                Staging Environments
-              </li>
-            </ul>
+        </div>
+        <div class="col-md-3 col-sm-3">
+          <div class="right-side-wrap">
+            <img src="assets/images/login-page-banner/server.jpg" alt="server-icon">
           </div>
         </div>
       </div>

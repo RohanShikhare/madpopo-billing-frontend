@@ -33,6 +33,7 @@ function addHeightToHeader() {
 }
 
 var prevScrollPos = window.pageYOffset;
+
 // Initialize Slick Slider
 $(document).ready(function () {
   $(".servicesSlider").slick({
@@ -108,4 +109,10 @@ $(document).ready(function () {
 //slick slider ended
 
 
-
+//login-pass-toggle-start
+$("#togglePassword").on("click", function () {
+  const type = $(".login-password").eq(0).attr("type") === "password" ? "text" : "password";
+  $(".login-password").eq(0).attr("type", type);
+  $(this).toggleClass("bi-eye");
+});
+//login-pass-toggle-end
