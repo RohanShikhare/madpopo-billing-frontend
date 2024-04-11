@@ -1984,19 +1984,19 @@ ul {
     top: -155px;
     left: 155px;
     z-index: 8;
-    @include mid-991-tab{
+    @include mid-991-tab {
       left: 115px;
     }
-    @include x-tablet{
+    @include x-tablet {
       left: 100px;
     }
-    @include md-mobile{
+    @include md-mobile {
       left: 70px;
     }
-    @include mobile{
+    @include mobile {
       left: 55px;
     }
-    @include xssm-mobile{
+    @include xssm-mobile {
       left: 45px;
     }
     .search-input-wrap {
@@ -2018,10 +2018,10 @@ ul {
         &:focus-visible {
           outline: none;
         }
-        @include x-767-tablet{
+        @include x-767-tablet {
           font-size: 1.4rem;
         }
-        @include mobile{
+        @include mobile {
           width: 100%;
         }
       }
@@ -2034,23 +2034,23 @@ ul {
         right: 133px;
         padding: 0 1rem;
         border-left: 1px solid #d9d9d9;
-        @include mid-991-tab{
+        @include mid-991-tab {
           right: 115px;
         }
-        @include x-tablet{
+        @include x-tablet {
           right: 80px;
         }
-        @include md-mobile{
+        @include md-mobile {
           right: 60px;
         }
-        @include mobile{
+        @include mobile {
           right: 13px;
         }
       }
     }
   }
 }
-#help-cards{
+#help-cards {
   position: relative;
   z-index: 8;
   margin-bottom: 2rem;
@@ -2117,3 +2117,232 @@ ul {
   }
 }
 //help-page-end
+
+//register page start
+#domain-table-wrap {
+  margin: 4rem 0;
+  margin-top: 15rem;
+  .domain-topbar-wrap {
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .domain-title-wrap {
+      padding: 0.5rem;
+      h3 {
+        color: #172f78;
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        color: #888888;
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    .domain-search-wrap {
+      padding: 0rem 1rem;
+      .domain-InputWrap {
+        position: relative;
+        span {
+          position: absolute;
+          width: 1.6rem;
+          height: 1.6rem;
+          text-align: center;
+          top: 9px;
+          left: 11px;
+        }
+        input {
+          background-color: #edf3ff;
+          height: 3.6rem;
+          width: 25rem;
+          border: none;
+          border-radius: 0.5rem;
+          color: #888888;
+          padding-left: 3.5rem;
+          font-size: 1.4rem;
+          &:focus-visible {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .d-table-wrap {
+    background-color: #f9fbff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    .tableInfoHead {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.4rem;
+      @include mobile {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .showEntriesWrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: flex-start;
+        span {
+          color: #888888;
+          font-weight: 400;
+          font-size: 1.6rem;
+        }
+        select {
+          color: #172f78;
+          font-weight: 600;
+          font-size: 1.6rem;
+          border: 1px solid #d9d9d9;
+          border-radius: 0.4rem;
+          padding: 0.2rem;
+          background-color: transparent;
+        }
+      }
+      .filterWrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button {
+          color: #172f78;
+          font-weight: 600;
+          font-size: 1.6rem;
+          border: 1px solid #d9d9d9;
+          border-radius: 0.4rem;
+          padding: 0.5rem 1rem;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          span {
+            display: flex;
+            align-items: center;
+          }
+        }
+        .domain-dateWrap {
+          position: relative;
+          display: flex;
+          align-items: center;
+          span {
+            position: absolute;
+            width: 1.7rem;
+            height: 1.7rem;
+            text-align: center;
+            top: 7px;
+            left: 11px;
+            display: flex;
+            align-items: center;
+          }
+          input {
+            color: #172f78;
+            font-weight: 600;
+            font-size: 1.6rem;
+            border: 1px solid #d9d9d9;
+            border-radius: 0.4rem;
+            padding: 0.2rem;
+            background-color: transparent;
+            padding-left: 3.5rem;
+            width: 17rem;
+            cursor: pointer;
+            caret-color: transparent;
+            &:focus-visible {
+              outline: none;
+            }
+            @include xss-mobile{
+              width: 14rem;
+            }
+          }
+        }
+      }
+    }
+
+    .domain-table {
+      width: 100%;
+      thead {
+        background-color: #edf3ff;
+        tr {
+          th {
+            font-size: 1.6rem;
+            color: #172f78;
+            padding: 2rem;
+            text-align: center;
+            @include mobile{
+              padding: 1rem;
+              font-size: 1.2rem;
+            }
+            @include xss-mobile{
+              padding: .5rem;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            font-size: 1.6rem;
+            color: #888888;
+            padding: 2rem;
+            text-align: center;
+            @include mobile{
+              padding: 1rem;
+              font-size: 1.2rem;
+            }
+            @include xss-mobile{
+              padding: .5rem;
+            }
+          }
+          &:nth-child(odd) {
+            background-color: white;
+          }
+          &:nth-child(even) {
+            background-color: #f6f9fd;
+          }
+        }
+      }
+    }
+
+    .domain-table-pagination {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.4rem;
+      @include mobile {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .showingEntriesWrap {
+        p {
+          color: #888888;
+          font-weight: 400;
+          font-size: 1.6rem;
+          margin: 0;
+        }
+      }
+      .domain-pagination-wrap {
+        .domain-pagination {
+          display: flex;
+          gap: 10px;
+          margin: 0;
+          li {
+            background-color: #edf3ff;
+            color: #94a2bc;
+            font-size: 1.4rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 0.4rem;
+            &.active {
+              color: #ffffff;
+              background-color: #1912d3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//register page end

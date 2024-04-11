@@ -116,3 +116,9 @@ $("#togglePassword").on("click", function () {
   $(this).toggleClass("bi-eye");
 });
 //login-pass-toggle-end
+
+//register datepicker start
+$(".domain-date-select").datepicker({
+  dateFormat: "MM yy",
+});
+//register datepicker end

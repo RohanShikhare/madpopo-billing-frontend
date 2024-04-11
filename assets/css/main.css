@@ -2351,4 +2351,235 @@ ul li {
     text-align: center;
     font-size: 1.6rem;
   }
+}
+
+#domain-table-wrap {
+  margin: 4rem 0;
+  margin-top: 15rem;
+}
+#domain-table-wrap .domain-topbar-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  #domain-table-wrap .domain-topbar-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+#domain-table-wrap .domain-topbar-wrap .domain-title-wrap {
+  padding: 0.5rem;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-title-wrap h3 {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-title-wrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-search-wrap {
+  padding: 0rem 1rem;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-search-wrap .domain-InputWrap {
+  position: relative;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-search-wrap .domain-InputWrap span {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  text-align: center;
+  top: 9px;
+  left: 11px;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-search-wrap .domain-InputWrap input {
+  background-color: #edf3ff;
+  height: 3.6rem;
+  width: 25rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #888888;
+  padding-left: 3.5rem;
+  font-size: 1.4rem;
+}
+#domain-table-wrap .domain-topbar-wrap .domain-search-wrap .domain-InputWrap input:focus-visible {
+  outline: none;
+}
+#domain-table-wrap .d-table-wrap {
+  background-color: #f9fbff;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+@media (max-width: 480px) {
+  #domain-table-wrap .d-table-wrap .tableInfoHead {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .showEntriesWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .showEntriesWrap span {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .showEntriesWrap select {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap button {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap button span {
+  display: flex;
+  align-items: center;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap .domain-dateWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap .domain-dateWrap span {
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  text-align: center;
+  top: 7px;
+  left: 11px;
+  display: flex;
+  align-items: center;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap .domain-dateWrap input {
+  color: #172f78;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.4rem;
+  padding: 0.2rem;
+  background-color: transparent;
+  padding-left: 3.5rem;
+  width: 17rem;
+  cursor: pointer;
+  caret-color: transparent;
+}
+#domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap .domain-dateWrap input:focus-visible {
+  outline: none;
+}
+@media (max-width: 320px) {
+  #domain-table-wrap .d-table-wrap .tableInfoHead .filterWrap .domain-dateWrap input {
+    width: 14rem;
+  }
+}
+#domain-table-wrap .d-table-wrap .domain-table {
+  width: 100%;
+}
+#domain-table-wrap .d-table-wrap .domain-table thead {
+  background-color: #edf3ff;
+}
+#domain-table-wrap .d-table-wrap .domain-table thead tr th {
+  font-size: 1.6rem;
+  color: #172f78;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #domain-table-wrap .d-table-wrap .domain-table thead tr th {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  #domain-table-wrap .d-table-wrap .domain-table thead tr th {
+    padding: 0.5rem;
+  }
+}
+#domain-table-wrap .d-table-wrap .domain-table tbody tr td {
+  font-size: 1.6rem;
+  color: #888888;
+  padding: 2rem;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #domain-table-wrap .d-table-wrap .domain-table tbody tr td {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 320px) {
+  #domain-table-wrap .d-table-wrap .domain-table tbody tr td {
+    padding: 0.5rem;
+  }
+}
+#domain-table-wrap .d-table-wrap .domain-table tbody tr:nth-child(odd) {
+  background-color: white;
+}
+#domain-table-wrap .d-table-wrap .domain-table tbody tr:nth-child(even) {
+  background-color: #f6f9fd;
+}
+#domain-table-wrap .d-table-wrap .domain-table-pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem;
+}
+@media (max-width: 480px) {
+  #domain-table-wrap .d-table-wrap .domain-table-pagination {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+#domain-table-wrap .d-table-wrap .domain-table-pagination .showingEntriesWrap p {
+  color: #888888;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+}
+#domain-table-wrap .d-table-wrap .domain-table-pagination .domain-pagination-wrap .domain-pagination {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+#domain-table-wrap .d-table-wrap .domain-table-pagination .domain-pagination-wrap .domain-pagination li {
+  background-color: #edf3ff;
+  color: #94a2bc;
+  font-size: 1.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+}
+#domain-table-wrap .d-table-wrap .domain-table-pagination .domain-pagination-wrap .domain-pagination li.active {
+  color: #ffffff;
+  background-color: #1912d3;
 }/*# sourceMappingURL=main.css.map */
