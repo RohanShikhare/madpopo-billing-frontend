@@ -2738,14 +2738,14 @@ ul li {
   }
 }
 #cart-wrap .cart-row .cart-summary-wrap h3 {
-  color: #172F78;
+  color: #172f78;
   font-size: 1.8rem;
   font-weight: 600;
   padding: 2rem 0;
   margin: 0;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap {
-  border: 1px solid #C5D8FF;
+  border: 1px solid #c5d8ff;
   margin: 0.5rem 0;
   border-radius: 0.5rem;
 }
@@ -2753,10 +2753,10 @@ ul li {
   width: 100%;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table thead tr th {
-  background-color: #EDF3FF;
+  background-color: #edf3ff;
   padding: 1rem 1.5rem;
   font-size: 1.6rem;
-  color: #172F78;
+  color: #172f78;
   text-align: start;
   font-weight: 500;
 }
@@ -2777,13 +2777,13 @@ ul li {
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table tbody tr td {
   background-color: white;
   font-size: 1.4rem;
-  color: #170F49;
+  color: #170f49;
   text-align: start;
   padding: 1rem 1.5rem;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table tbody tr td:last-child {
   text-align: end;
-  color: #172F78;
+  color: #172f78;
 }
 @media (max-width: 991px) {
   #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table tbody tr td {
@@ -2805,7 +2805,7 @@ ul li {
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table tfoot tr td:last-child {
   text-align: end;
-  color: #172F78;
+  color: #172f78;
 }
 @media (max-width: 991px) {
   #cart-wrap .cart-row .cart-summary-wrap .order-wrap .order-table tfoot tr td {
@@ -2819,13 +2819,13 @@ ul li {
   }
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap h3 {
-  color: #172F78;
+  color: #172f78;
   font-size: 1.4rem;
   font-weight: 500;
   padding: 0 1.5rem;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap input {
-  border: 1px solid #172F78;
+  border: 1px solid #172f78;
   border-radius: 0.5rem;
   font-size: 1.2rem;
   color: #888888;
@@ -2834,7 +2834,7 @@ ul li {
   width: 93%;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap input:focus-visible {
-  outline: 1px solid #172F78;
+  outline: 1px solid #172f78;
 }
 @media (max-width: 1200px) {
   #cart-wrap .cart-row .cart-summary-wrap .order-wrap input {
@@ -2850,13 +2850,13 @@ ul li {
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .totalAmountWrap p {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #172F78;
+  color: #172f78;
   margin: 0;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .totalAmountWrap span {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #172F78;
+  color: #172f78;
 }
 #cart-wrap .cart-row .cart-summary-wrap .order-wrap .checkout-btn {
   color: white;
@@ -2864,7 +2864,7 @@ ul li {
   font-size: 1.6rem;
   text-align: center;
   margin: 3rem auto;
-  background-color: #2E0AA3;
+  background-color: #2e0aa3;
   display: block;
   width: 95%;
   padding: 0.5rem 0;
@@ -2875,4 +2875,150 @@ ul li {
   #cart-wrap .cart-row .cart-summary-wrap .order-wrap .checkout-btn {
     width: 88%;
   }
+}
+
+#regSection .regRow {
+  display: flex;
+  justify-content: center;
+}
+#regSection .regRow .reg-form-wrap {
+  padding: 3rem;
+  padding-bottom: 0;
+  margin: 1rem;
+  margin-bottom: 4rem;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 10;
+  background: white;
+}
+@media (max-width: 480px) {
+  #regSection .regRow .reg-form-wrap {
+    padding: 0;
+    margin: 0;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-title-wrap {
+  text-align: center;
+}
+@media (max-width: 480px) {
+  #regSection .regRow .reg-form-wrap .reg-title-wrap {
+    padding: 3rem;
+    padding-bottom: 0;
+    margin: 1rem;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-title-wrap .secText span {
+  color: #5479f7;
+}
+#regSection .regRow .reg-form-wrap .reg-title-wrap .secText a {
+  display: inline-block;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+#regSection .regRow .reg-form-wrap .reg-form {
+  display: flex;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form {
+    flex-wrap: wrap;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-left div {
+  display: flex;
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-left div label {
+  color: #888888;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  width: 50%;
+  text-align: end;
+  margin: 0.5rem;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form .reg-left div label {
+    font-size: 1.6rem;
+    width: 35%;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-left div input {
+  width: 50%;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-left div input:focus-visible {
+  outline: none;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form .reg-left div input {
+    width: 60%;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div {
+  display: flex;
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div label {
+  color: #888888;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  width: 50%;
+  text-align: end;
+  margin: 0.5rem;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form .reg-right div label {
+    font-size: 1.6rem;
+    width: 35%;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div input {
+  width: 50%;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div input:focus-visible {
+  outline: none;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form .reg-right div input {
+    width: 60%;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div select {
+  width: 50%;
+  margin: 0.5rem;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.5rem;
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div select:focus-visible {
+  outline: none;
+}
+@media (max-width: 768px) {
+  #regSection .regRow .reg-form-wrap .reg-form .reg-right div select {
+    width: 60%;
+  }
+}
+#regSection .regRow .reg-form-wrap .reg-form .reg-right div select option {
+  width: auto;
+}
+#regSection .regRow .reg-form-wrap .submit-wrap {
+  display: flex;
+  justify-content: end;
+  padding: 0.5rem 1.5rem;
+  padding-bottom: 2rem;
 }/*# sourceMappingURL=main.css.map */

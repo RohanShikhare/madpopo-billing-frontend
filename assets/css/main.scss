@@ -2349,7 +2349,7 @@ ul {
 #cart-wrap {
   margin: 2rem auto;
   max-width: 1140px;
-  @include d-1200-desktop{
+  @include d-1200-desktop {
     max-width: 960px;
     margin: 2rem auto;
   }
@@ -2357,15 +2357,15 @@ ul {
     max-width: 768px;
     margin: 2rem auto;
   }
-  @include md-tablet{
+  @include md-tablet {
     max-width: 735px;
     margin: 2rem auto;
   }
-  @include x-767-tablet{
+  @include x-767-tablet {
     max-width: 540px;
     margin: 2rem auto;
   }
-  @include md-mobile{
+  @include md-mobile {
     max-width: 85%;
     margin: 2rem auto;
   }
@@ -2373,10 +2373,10 @@ ul {
   .cart-row {
     display: flex;
     flex-wrap: wrap;
-    
+
     .cart-table-wrap {
       padding: 2rem;
-      @include x-tablet{
+      @include x-tablet {
         padding: 0;
       }
       .cart-table-title {
@@ -2412,14 +2412,14 @@ ul {
                 border-left: 1px solid #dcefff;
                 border-right: 1px solid #dcefff;
               }
-              @include mid-991-tab{
+              @include mid-991-tab {
                 padding: 1rem;
                 font-size: 1.4rem;
               }
-              @include md-mobile{
+              @include md-mobile {
                 font-size: 1.2rem;
               }
-              @include mobile{
+              @include mobile {
                 font-size: 1rem;
               }
             }
@@ -2438,14 +2438,14 @@ ul {
               &:nth-child(4) {
                 color: #888888;
               }
-              @include mid-991-tab{
+              @include mid-991-tab {
                 padding: 1rem;
                 font-size: 1.4rem;
               }
-              @include md-mobile{
+              @include md-mobile {
                 font-size: 1.2rem;
               }
-              @include mobile{
+              @include mobile {
                 font-size: 1rem;
               }
             }
@@ -2479,149 +2479,147 @@ ul {
         }
       }
     }
-    .cart-summary-wrap{
+    .cart-summary-wrap {
       padding: 2rem;
-      @include x-tablet{
+      @include x-tablet {
         padding: 0;
-      } 
-      h3{
-        color: #172F78;
+      }
+      h3 {
+        color: #172f78;
         font-size: 1.8rem;
         font-weight: 600;
         padding: 2rem 0;
         margin: 0;
       }
-      .order-wrap{
-        border: 1px solid #C5D8FF;
-        margin: .5rem 0;
-        border-radius: .5rem;
+      .order-wrap {
+        border: 1px solid #c5d8ff;
+        margin: 0.5rem 0;
+        border-radius: 0.5rem;
 
-        .order-table{
+        .order-table {
           width: 100%;
-          thead{
-            tr{
-              th{
-                background-color: #EDF3FF;
+          thead {
+            tr {
+              th {
+                background-color: #edf3ff;
                 padding: 1rem 1.5rem;
                 font-size: 1.6rem;
-                color: #172F78;
+                color: #172f78;
                 text-align: start;
                 font-weight: 500;
-                &:last-child{
+                &:last-child {
                   text-align: end;
                 }
-                @include mid-991-tab{
-                  padding: .5rem;
+                @include mid-991-tab {
+                  padding: 0.5rem;
                   font-size: 1.2rem;
                 }
-                
-                @include mobile{
+
+                @include mobile {
                   font-size: 1rem;
                 }
               }
             }
           }
-          tbody{
-            tr{
-              td{
+          tbody {
+            tr {
+              td {
                 background-color: white;
                 font-size: 1.4rem;
-                color: #170F49;
+                color: #170f49;
                 text-align: start;
                 padding: 1rem 1.5rem;
-                &:last-child{
+                &:last-child {
                   text-align: end;
-                  color: #172F78;
+                  color: #172f78;
                 }
-                @include mid-991-tab{
-                  padding: .5rem;
+                @include mid-991-tab {
+                  padding: 0.5rem;
                   font-size: 1.2rem;
                 }
-               
-                @include mobile{
+
+                @include mobile {
                   font-size: 1rem;
                 }
               }
-              
             }
           }
-          tfoot{
-            tr{
-              td{
+          tfoot {
+            tr {
+              td {
                 background-color: white;
                 font-size: 1.4rem;
                 color: #888888;
                 text-align: start;
                 padding: 1rem 1.5rem;
-                &:last-child{
+                &:last-child {
                   text-align: end;
-                  color: #172F78;
+                  color: #172f78;
                 }
-                @include mid-991-tab{
-                  padding: .5rem;
+                @include mid-991-tab {
+                  padding: 0.5rem;
                   font-size: 1.2rem;
                 }
-               
-                @include mobile{
+
+                @include mobile {
                   font-size: 1rem;
                 }
               }
-              
             }
           }
         }
 
-        h3{
-          color: #172F78;
+        h3 {
+          color: #172f78;
           font-size: 1.4rem;
           font-weight: 500;
           padding: 0 1.5rem;
         }
-        input{
-          border: 1px solid #172F78;
-          border-radius: .5rem;
+        input {
+          border: 1px solid #172f78;
+          border-radius: 0.5rem;
           font-size: 1.2rem;
           color: #888888;
-          padding:  1rem ;
-          margin: .5rem 1.5rem;
+          padding: 1rem;
+          margin: 0.5rem 1.5rem;
           width: 93%;
-          &:focus-visible{
-            outline: 1px solid #172F78;
+          &:focus-visible {
+            outline: 1px solid #172f78;
           }
-          @include d-1200-desktop{
+          @include d-1200-desktop {
             width: 88%;
           }
         }
-        .totalAmountWrap{
+        .totalAmountWrap {
           display: flex;
           align-items: center;
           justify-content: space-between;
           margin: 1.5rem;
-          p{
+          p {
             font-size: 1.8rem;
-          font-weight: 600;
-          color: #172F78;
-          margin: 0;
+            font-weight: 600;
+            color: #172f78;
+            margin: 0;
           }
-          span{
+          span {
             font-size: 1.8rem;
-          font-weight: 600;
-          color: #172F78;
+            font-weight: 600;
+            color: #172f78;
           }
         }
-        .checkout-btn{
+        .checkout-btn {
           color: white;
           font-weight: 700;
           font-size: 1.6rem;
           text-align: center;
           margin: 3rem auto;
-          background-color: #2E0AA3;
+          background-color: #2e0aa3;
           display: block;
           width: 95%;
-          padding: .5rem 0;
-          border-radius: .5rem;
+          padding: 0.5rem 0;
+          border-radius: 0.5rem;
           border: none;
-          @include d-1200-desktop{
+          @include d-1200-desktop {
             width: 88%;
           }
         }
@@ -2630,3 +2628,140 @@ ul {
   }
 }
 //cart-page-end
+
+//user-registration start
+#regSection {
+  .regRow {
+    display: flex;
+    justify-content: center;
+
+    .reg-form-wrap {
+      padding: 3rem;
+      padding-bottom: 0;
+      margin: 1rem;
+      margin-bottom: 4rem;
+      border: 1px solid #d9d9d9;
+      border-radius: 0.5rem;
+      position: relative;
+      z-index: 10;
+      background: white;
+      @include mobile {
+        padding: 0;
+        margin: 0;
+      }
+      .reg-title-wrap {
+        text-align: center;
+        @include mobile {
+          padding: 3rem;
+          padding-bottom: 0;
+          margin: 1rem;
+        }
+        .secText {
+          span {
+            color: #5479f7;
+          }
+          a {
+            display: inline-block;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+          }
+        }
+      }
+      .reg-form {
+        display: flex;
+        padding: 1rem;
+        @include x-tablet {
+          flex-wrap: wrap;
+        }
+        .reg-left {
+          div {
+            display: flex;
+            label {
+              @include sectionDescription;
+              width: 50%;
+              text-align: end;
+              margin: 0.5rem;
+              @include x-tablet {
+                font-size: 1.6rem;
+                width: 35%;
+              }
+            }
+            input {
+              width: 50%;
+              margin: 0.5rem;
+              font-size: 1.4rem;
+              padding: 0.2rem 0.5rem;
+              color: gray;
+              border: 1px solid grey;
+              border-radius: 0.3rem;
+              &:focus-visible {
+                outline: none;
+              }
+              @include x-tablet {
+                width: 60%;
+              }
+            }
+          }
+        }
+        .reg-right {
+          div {
+            display: flex;
+            label {
+              @include sectionDescription;
+              width: 50%;
+              text-align: end;
+              margin: 0.5rem;
+              @include x-tablet {
+                font-size: 1.6rem;
+                width: 35%;
+              }
+            }
+            input {
+              width: 50%;
+              margin: 0.5rem;
+
+              font-size: 1.4rem;
+              padding: 0.2rem 0.5rem;
+              color: gray;
+              border: 1px solid grey;
+              border-radius: 0.3rem;
+              &:focus-visible {
+                outline: none;
+              }
+              @include x-tablet {
+                width: 60%;
+              }
+            }
+            select {
+              width: 50%;
+              margin: 0.5rem;
+
+              font-size: 1.4rem;
+              padding: 0.2rem 0.5rem;
+              color: gray;
+              border: 1px solid grey;
+              border-radius: 0.3rem;
+              &:focus-visible {
+                outline: none;
+              }
+              @include x-tablet {
+                width: 60%;
+              }
+              option {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
+      .submit-wrap {
+        display: flex;
+        justify-content: end;
+        padding: 0.5rem 1.5rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+//user-registeration end

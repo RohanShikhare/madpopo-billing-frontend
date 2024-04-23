@@ -87,6 +87,9 @@ $(document).ready(function () {
     ],
   });
 
+
+  
+
   //accordian start
   $('.commonAccordian').click(function(){
     $(this).toggleClass('active');
