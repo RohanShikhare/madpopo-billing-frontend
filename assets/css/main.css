@@ -1217,6 +1217,8 @@ ul li {
 
 #footerSection {
   background: linear-gradient(180deg, rgb(24, 13, 91) 0%, rgb(25, 143, 207) 100%);
+  position: relative;
+  z-index: 2;
 }
 #footerSection .footerRow {
   display: flex;

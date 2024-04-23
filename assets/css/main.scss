@@ -1071,7 +1071,8 @@ ul {
     rgb(24, 13, 91) 0%,
     rgb(25, 143, 207) 100%
   );
-
+  position: relative;
+  z-index: 2;
   .footerRow {
     display: flex;
     align-items: center;
